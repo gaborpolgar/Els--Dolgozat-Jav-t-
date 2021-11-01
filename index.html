@@ -5,24 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>    
+        span{
+            font-weight: bold;
+        }
+        table,td,th {border:1px solid blue;
+        border-collapse: unset;}
+        .sorkizart{
+            text-align: justify;
+        }
+        #italian{
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-    <h1>Első szintű címsor</h1>
-    <p>Első bekezdés</p>
-    <ul>
+    <a href="www.petrik.hu" target="_blank" class="menu">Ugrás az iskola weboldalára</a>
+    <br>
+    <a href="#end" class="menu">Ugrás a weboldal aljára</a>
+    <br>
+    <a href="secondPage.html">Ugrás a második oldalra</a>
+    <br>
+    <h1 class="headings" >Első szintű címsor</h1>
+    <br>
+    <table>
+        <caption>Táblázat címe</caption>
+        <thead>
+            <tr>
+                <th colspan="1"> Első oszlop</th>
+                <th colspan="1"> Második oszlop</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th>1. bejegyzés</th>
+            <!-- <th rowspan="1"></th> -->
+            <th>jobbszélső bejegyz</th>
+        </tr>
+            <th rowspan="1">2. bejegyzés</th>
+            <!-- <th rowspan="1"></th> -->
+            <th>Egy újabb bejegyzés</th>
+            <tr></tr>
+                <th>3. bejegyzés</th>
+                <!-- <th rowspan="1"></th> -->
+                <th>jobbalsó bejegyz</th>
+            
+        </tbody>
+        <tfoot>
+            <tr></tr>
+        </tfoot>
+    </table>
+    <p id="italian"><span>dőlt</span> betűs bekezdés</p>
+    <p class="sorkizart"> <span>Első bekezdés</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies facilisis ante vel cursus. Suspendisse potenti. Proin sodales quam ipsum, et sodales massa tincidunt eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean convallis ante metus, sed feugiat velit dapibus at. Aliquam nec tellus cursus, vehicula turpis id, vulputate mi. Donec a sem est.
+    </p>
+    <ul class="list">
         <li>Első számozatlan listaelem</li>
         <li>Második számozatlan listaelem</li>
         <img src="https://slideplayer.hu/slide/2237472/9/images/5/St%C3%ADlusok%2C+c%C3%ADmsorok%2C+stb.+%3Cb%3EK%C3%B6v%C3%A9r+bet%C5%B1k+%28bold%29+%3C%2Fb%3E.jpg" 
         alt="" title="Külső hivatkozásra mutató kép">
     </ul>
-    <h2>Második szintű címsor</h2>
-    <p>Második bekezdés</p>
-    <ol>
+    <h2 class="headings">Második szintű címsor</h2>
+    <p class="sorkizart"> <span>Második bekezdés</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies facilisis ante vel cursus. Suspendisse potenti. Proin sodales quam ipsum, et sodales massa tincidunt eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean convallis ante metus, sed feugiat velit dapibus at. Aliquam nec tellus cursus, vehicula turpis id, vulputate mi. Donec a sem est.
+
+    </p>
+    <ol class="list">
         <li>Első számozott listaelem</li>
         <li>Második számozott listaelem</li>
     </ol>
     <img src="images/html-oldal-dokumentum-felepitese-html-strukturaja.jpg" 
-    alt="" title="Letöltött projekten belüli kép">
-    
+    id="end" title="Letöltött projekten belüli kép">
 </body>
 </html>
